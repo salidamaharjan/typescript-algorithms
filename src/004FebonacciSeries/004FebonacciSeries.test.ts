@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
 
 function febonacci(position: number): number {
-  // var array: number[] = [0, 1];
+  var array: number[] = [0, 1];
   // if (position <= 1) {
   //   return array[position];
   // } else {
@@ -17,7 +17,7 @@ function febonacci(position: number): number {
 
   if (position === 0) return position;
   if (position === 1) return position;
-  } else {
+   else {
     for (let i = 1; i < array.length; i++) {
       var nextNum = array[i] + array[i - 1];
       array.push(nextNum);
