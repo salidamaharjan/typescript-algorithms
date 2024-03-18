@@ -2,7 +2,13 @@ import { describe, expect, test } from "vitest";
 // Write a function to find the maximum number in an array
 function maxNum(arr: number[]): number {
   // TODO: Update your code here
-  return 0;
+  let maxNum: number = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if(arr[i] > maxNum){
+      maxNum = arr[i];
+    }
+  }
+  return maxNum;
 }
 
 // ------------------------------------------------------------
