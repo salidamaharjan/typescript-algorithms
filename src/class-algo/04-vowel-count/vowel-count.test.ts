@@ -4,7 +4,14 @@ import { expect, test, describe } from "vitest";
 // the number of vowels in the string.
 function vowelCount(str: string): number {
   // TODO: Update your code here
-  return 0;
+  const vowel: string[] = ["a","e","i","o","u"];
+  let count = 0;
+  for(let i = 0; i < str.length; i++){
+    if(vowel.includes(str[i])){
+      count += 1;
+    }
+  }
+  return count;
 }
 
 // ------------------------------------------------------------
