@@ -2,7 +2,14 @@ import { expect, describe, test } from "vitest";
 // Write code to create a function takes a string and returns a new string with the first letters of each word capitalized
 function titleCase(str: string): string {
   // TODO: Update your code here
-  return "";
+  const strSplit: string[] = str.split(' ');
+  let newStr: string[] = [];
+  for (let i = 0; i < strSplit.length; i++){
+    let word = strSplit[i].split('');
+    word[0] = word[0].toUpperCase();
+    newStr.push(word.join(''));
+  }
+  return newStr.join(' ');
 }
 
 describe("titleCase", () => {

@@ -3,7 +3,13 @@ import { describe, expect, test } from "vitest";
 // Solve using recursion
 function factorial(num: number): number {
   // TODO: Update your code here
-  return 0;
+    let factor = 1;
+    let factor2 = factor+1;
+    let factorial = factor * (factor2);
+    if(factor2 === num){
+      return factorial;
+    }
+  return factorial;
 }
 
 // ------------------------------------------------------------
