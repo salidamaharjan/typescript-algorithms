@@ -1,4 +1,3 @@
-import { describe, expect, test } from "vitest";
 // Write a function to find the maximum number in an array
 function maxNum(arr: number[]): number {
   // TODO: Update your code here

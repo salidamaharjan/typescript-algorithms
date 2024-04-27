@@ -1,4 +1,3 @@
-import { expect, describe, it } from "vitest";
 // Write code to create a function that accepts a string and returns the string in camelCase
 function camelCase(str: string): string {
   return "";

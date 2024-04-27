@@ -1,5 +1,3 @@
-import { test , expect } from 'vitest';
-
 // function twoSum(nums: number[], target: number): number[] {
 //     let index: number[] = [];
 //     for(let i: number = 0; i < nums.length; i++){
@@ -26,20 +24,20 @@ import { test , expect } from 'vitest';
 //     }
 
 function twoSum(nums: number[], target: number): number[] {
-    let index = new Map<number, number>();
-    for (let i: number = 0; i < nums.length; i++){
-        index.set(nums[i],i);
-        const diff: number = target - nums[i];
-        if(index.has(diff)){
-            return [index.get(diff)!, i];
-        }
+  let index = new Map<number, number>();
+  for (let i: number = 0; i < nums.length; i++) {
+    index.set(nums[i], i);
+    const diff: number = target - nums[i];
+    if (index.has(diff)) {
+      return [index.get(diff)!, i];
     }
-    return[]
+  }
+  return [];
 }
 
 test("test twoSum", () => {
-    const nums: number[] = [2,7,11,15];
-    expect(twoSum(nums, 9)).toStrictEqual([0,1]);
-    expect(twoSum(nums, 17)).toStrictEqual([0,3]);
-    expect(twoSum(nums, 18)).toStrictEqual([1,2]);
-})
+  const nums: number[] = [2, 7, 11, 15];
+  expect(twoSum(nums, 9)).toStrictEqual([0, 1]);
+  expect(twoSum(nums, 17)).toStrictEqual([0, 3]);
+  expect(twoSum(nums, 18)).toStrictEqual([1, 2]);
+});

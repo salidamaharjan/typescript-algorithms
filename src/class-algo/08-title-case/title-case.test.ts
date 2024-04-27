@@ -1,4 +1,3 @@
-import { expect, describe, test } from "vitest";
 // Write code to create a function takes a string and returns a new string with the first letters of each word capitalized
 function titleCase(str: string): string {
   // TODO: Update your code here

@@ -1,4 +1,3 @@
-import { expect, describe, it } from "vitest";
 function multiplyInto20(arr: number[]): boolean {
   // TODO: Write Your Code Here
   return false;

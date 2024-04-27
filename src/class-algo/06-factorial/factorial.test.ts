@@ -1,4 +1,3 @@
-import { describe, expect, test } from "vitest";
 // Write a function that takes a number and returns the factorial of that number.
 function factorial(num: number): number {
   // TODO: Update your code here

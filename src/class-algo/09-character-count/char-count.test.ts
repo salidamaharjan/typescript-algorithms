@@ -1,10 +1,15 @@
-import { expect, test, describe } from "vitest";
-
 // Write code to create a  th =>at accepts a string and returns an object containing the number of times each character appears in the string
 var characterCount = function characterCount(str: string): {
   [key: string]: number;
 } {
   //TODO: Update your code here
+  let obj: {} = {};
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (char in obj) {
+      obj[char]++;
+    }
+  }
   return {};
 };
 

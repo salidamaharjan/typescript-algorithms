@@ -1,18 +1,16 @@
-import { expect, describe, test } from "vitest";
-
 // Write a function that takes a string and returns true if the string is a palindrome.
 function isPalindrome(str: string): boolean {
   // TODO: Update your code here
-  const mid: number = Math.floor(str.length/2);
-  let comparing: number= str.length-1;
-  let palindrome: boolean = true
-  for(let i = 0; i < mid; i++){
-      if(str[i] === str[comparing]){
-        comparing -= 1;
-        palindrome = true;
-      } else {
-        return palindrome = false;
-      }
+  const mid: number = Math.floor(str.length / 2);
+  let comparing: number = str.length - 1;
+  let palindrome: boolean = true;
+  for (let i = 0; i < mid; i++) {
+    if (str[i] === str[comparing]) {
+      comparing -= 1;
+      palindrome = true;
+    } else {
+      return (palindrome = false);
+    }
   }
   return palindrome;
 }

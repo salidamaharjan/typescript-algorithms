@@ -1,4 +1,3 @@
-import { expect, describe, it } from "vitest";
 // Write code to merge two sorted arrays into a new sorted array
 
 function mergeSorted(arr1: number[], arr2: number[]): number[] {

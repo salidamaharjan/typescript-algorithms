@@ -1,13 +1,11 @@
-import { expect, test, describe } from "vitest";
-
 // Write a function that takes a string and returns
 // the number of vowels in the string.
 function vowelCount(str: string): number {
   // TODO: Update your code here
-  const vowel: string[] = ["a","e","i","o","u"];
+  const vowel: string[] = ["a", "e", "i", "o", "u"];
   let count = 0;
-  for(let i = 0; i < str.length; i++){
-    if(vowel.includes(str[i])){
+  for (let i = 0; i < str.length; i++) {
+    if (vowel.includes(str[i])) {
       count += 1;
     }
   }

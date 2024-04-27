@@ -1,23 +1,20 @@
-import { expect, describe, test, beforeEach, vi } from "vitest";
-
 // Write a function such that for each element in the array,
 // it prints "Fizz" for numbers evenly divisible by 3,
 // "Buzz" for numbers evenly divisible by 5,
 // "Fizz Buzz" for numbers evenly divisible by 3 AND 5.
 // Otherwise it prints the number if not evenly divisible by 3 or 5.
 function fizzBuzz(arr: number[]) {
-  for(let i = 0 ; i < arr.length; i++){
-    if(arr[i] % 3 === 0 && arr[i] % 5 === 0) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 3 === 0 && arr[i] % 5 === 0) {
       console.log("Fizz Buzz");
-    }
-    else if(arr[i] % 3 === 0) {
+    } else if (arr[i] % 3 === 0) {
       console.log("Fizz");
-    } else if (arr[i] % 5 === 0){
+    } else if (arr[i] % 5 === 0) {
       console.log("Buzz");
     } else {
       console.log(arr[i]);
     }
-   }
+  }
 }
 
 // ------------------------------------------------------------
