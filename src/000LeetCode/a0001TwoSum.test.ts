@@ -1,3 +1,5 @@
+import { expect, test } from "@jest/globals";
+
 function twoSum(arr: number[], num: number) {
   let newArr: number[] = [];
   for (let i: number = 0; i < arr.length; i++) {
