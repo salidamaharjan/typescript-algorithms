@@ -1,5 +1,7 @@
 // Write a function that takes a number and returns the factorial of that number.
 // Solve using recursion
+import { expect, test } from "@jest/globals";
+
 function factorial(num: number): number {
   // TODO: Update your code here
     let factor = 1;

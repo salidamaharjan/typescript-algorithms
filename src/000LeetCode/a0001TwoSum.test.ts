@@ -15,5 +15,5 @@ function twoSum(arr: number[], num: number) {
 test("returns the array two number which sum to equal given number", () => {
   const arr = [1, 2, 3, 5, 7];
   const num: number = 9;
-  expect(twoSum(arr, num)).toEqual(num);
+  expect(twoSum(arr, num)).toEqual([2, 7]);
 });
